@@ -1,0 +1,1 @@
+/usr/local/bin/php /home/vspilnot/domains/vspilnoty.vinnica.ua/public_html/cron/limits.php >/dev/null

@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^([a-zA-Z_0-9-\/]+)$ $1/ [R=301,L]
+
+RewriteRule ^([a-zA-Z_0-9-]+)/$ index.php?link_1=$1 [L]
+RewriteRule ^([a-zA-Z_0-9-]+)/([a-zA-Z_0-9-]+)/$ index.php?link_1=$1&link_2=$2 [L]
+RewriteRule ^([a-zA-Z_0-9-]+)/([a-zA-Z_0-9-]+)/([a-zA-Z_0-9-]+)/$ index.php?link_1=$1&link_2=$2&link_3=$3 [L]

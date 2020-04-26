@@ -1,0 +1,7 @@
+.service {
+	border: 1px solid brown;
+	border-radius: 6px;
+	margin: 10px auto 0;
+	background-color: #eee;
+	padding-left: 30px;
+}
